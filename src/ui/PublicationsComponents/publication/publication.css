@@ -1,0 +1,29 @@
+.PostClass{
+    width: 90%;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #adadad;
+    margin: 10px 0;
+}
+
+.PostClass .date{
+    height: 10px;
+    color: #8d8d8d;
+    font-size: 10px;
+    margin: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PostClass .creator{
+    height: 10px;
+    color: #8d8d8d;
+    font-size: 12px;
+    margin: 10px; 
+}
+
+.PostClass .message{
+    margin: 10px;
+}

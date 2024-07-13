@@ -1,0 +1,42 @@
+.HomeClass{
+    width: 100%;
+    height: 100vh;
+}
+
+.MainContainer{
+    width: 100%;
+    height: 87.8vh;
+    display: flex;
+    align-items: center;
+}
+
+.MainContainer .Classes{
+    overflow-y: scroll;
+    width: 82%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.notFount{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #adadad;
+}
+
+.notFount p{
+    user-select: none;
+    text-align: center;
+    font-family: 'roboto-b';
+    font-size: 40px;
+}
+
+.notFount .Icon{
+    width: 100%;
+    font-size: 150px;
+}

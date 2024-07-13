@@ -1,0 +1,7 @@
+.BoardClass{
+    width: 18%;
+    height: 100%;
+    background: white;
+    border-right: 1px solid #adadad;
+    z-index: 100;
+}

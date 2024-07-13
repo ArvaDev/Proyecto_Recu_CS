@@ -1,0 +1,17 @@
+.MessageClass{
+    background: white;
+    padding: 10px 10px;
+    border: 1px solid #adadad;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 5px 3%;
+    overflow: hidden;
+}
+
+.MessageClass .user{
+    font-size: 10px;
+    color: #808080;
+    margin: 3px 0;
+    padding: 0;
+}

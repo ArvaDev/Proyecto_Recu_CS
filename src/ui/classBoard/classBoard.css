@@ -1,0 +1,23 @@
+.ClassBoardClass{
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+}
+
+.Add{
+    color: #adadad;
+    user-select: none;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto-b';
+    font-size: 20px;
+}
+.disc{
+    width: 100%;
+    font-size: 50px;
+    margin: 20px 0;
+}

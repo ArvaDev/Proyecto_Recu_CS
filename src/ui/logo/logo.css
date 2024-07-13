@@ -1,0 +1,10 @@
+.Logo{
+    margin: 30px;
+    font-size: 30px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'roboto-b';
+}
