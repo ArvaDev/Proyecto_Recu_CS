@@ -4,9 +4,10 @@ import axios from 'axios';
 import { useState, useRef } from 'react';
 import { IoSend } from "react-icons/io5";
 
-export default function CreatePostButton({ user, classID }) {
+export default function CreatePostButton({ classData, user, classID }) {
     const [msg, setMsg] = useState(false);
     const textAreaRef = useRef(null);
+
 
     const onClick = () => {
         setMsg(!msg);
@@ -27,6 +28,11 @@ export default function CreatePostButton({ user, classID }) {
                 message: textAreaRef.current.value,
                 date: Date.now()
             }
+
+            classData?.webhooks.forEach(element => {
+                const data = {user: user, action: `Creo un post en la clase ${classData?.name}`};
+                axios.post(element, data);
+            });
 
             await axios.post(`http://localhost:3000/classes/${classID}`, message)
                 .then(() => { window.location.reload() })

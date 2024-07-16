@@ -1,13 +1,15 @@
 import './webHooksModal.css';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 import Input from '../../input/input';
 import Warning from '../../warning/warning';
-import Button from '../../btn/Button';
 export default function WebHooksModal({close, classID}) {
     const {register, formState: {errors}, handleSubmit } = useForm();
     const sumit = (d) => {
         d.select = parseInt(d.select);
-        console.log(d);
+        const wh = { webhook: d.url }
+
+        axios.post(`http://localhost:3000/classes/webhooks/${classID}`, wh);
     }
     return (
         <div className="WebHooksModalClass">
